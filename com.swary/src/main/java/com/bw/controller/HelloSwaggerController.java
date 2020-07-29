@@ -12,7 +12,7 @@ public class HelloSwaggerController {
 
     @RequestMapping("sayHello")
     @ApiImplicitParams({@ApiImplicitParam(name = "name",value = "用户姓名",required = true)})
-    @ApiOperation(value = "返回用户姓名")
+    @ApiOperation(value = "返回用户姓名",httpMethod = "post",response = String.class)
     public String sayHello(String name){
         User user=new User();
         user.setName("张san1");

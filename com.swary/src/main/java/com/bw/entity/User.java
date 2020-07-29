@@ -6,7 +6,7 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 @ApiModel(description = "返回响应数据")
 public class User implements Serializable {
-    @ApiModelProperty(value = "用户编号")
+    @ApiModelProperty(value = "用户编号",required = true)
     private Integer id;
     @ApiModelProperty(value = "用户姓名")
     private String name;
